@@ -8,7 +8,7 @@ public class CSVReader {
     public static List<String> readCSV(){
         String row;
         List<String> resultList= new ArrayList<>();
-        try(BufferedReader csvReader= new BufferedReader(new FileReader("resources/employees.csv"));) {
+        try(BufferedReader csvReader= new BufferedReader(new FileReader("resources/EmployeeRecordsLarge.csv"));) {
 
             while( (row= csvReader.readLine())!=null){
                 resultList.add(row);
