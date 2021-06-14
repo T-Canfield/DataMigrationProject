@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CSVReader {
-    public static List<String> readCSV(){
+    public static List<String> readCSV(String fileName){
         String row;
         List<String> resultList= new ArrayList<>();
-        try(BufferedReader csvReader= new BufferedReader(new FileReader("resources/employees.csv"));) {
+        try(BufferedReader csvReader= new BufferedReader(new FileReader(fileName))) {
 
             while( (row= csvReader.readLine())!=null){
                 resultList.add(row);
