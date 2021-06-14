@@ -9,7 +9,6 @@ public class CSVReader {
         String row;
         List<String> resultList= new ArrayList<>();
         try(BufferedReader csvReader= new BufferedReader(new FileReader(fileName))) {
-
             while( (row= csvReader.readLine())!=null){
                 resultList.add(row);
             }
